@@ -23,7 +23,7 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
         // Real API call (replace mockApiResponse)
         loadingSpinner.textContent = 'Loading...';
         loadingSpinner.classList.remove('hidden');
-        const response = await fetch(`https://fastapi-python-boilerplate-ruddy.vercel.app/api/${encodeURIComponent(url)}`);
+        const response = await fetch(`https://fastapi-python-boilerplate.onrender.com/api/${encodeURIComponent(url)}`);
         const data = await response.json();
         
 
