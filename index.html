@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Profiles</title>
+    <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-6">Leadership Profiles</h1>
+        <h3 class="text-3xl font-bold text-center mb-6">Paste the URL to scrape</h1>
+        <div class="flex justify-center mb-6">
+            <input 
+                type="text" 
+                id="urlInput" 
+                placeholder="Enter webpage URL (e.g., https://www.googlecloudpresscorner.com/leadership/)"
+                class="border rounded-l-md p-2 w-96 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            <!-- From Uiverse.io by adamgiebl --> 
+            <button class="cssbuttons-io" id="searchBtn">
+                <span
+                ><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                    fill="currentColor"
+                    ></path>
+                </svg>
+                Scrape</span
+                >
+            </button>
+  
+        </div>
+        <div id="loading-spinner" class="loading hidden"></div>
+        <div id="cardGrid" class="card-grid"></div>
+        <p id="errorMsg" class="error hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
